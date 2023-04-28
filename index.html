@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profecenal website design using oly css</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    @import url("https://fonts. googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #081b29;
+  color: antiquewhite;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 23px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: aquamarine;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: aqua;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 100%;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-box a :nth-child(2) {
+  background-color: transparent;
+  color: #00abf0;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  color: white;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  color: aqua;
+  z-index: 1;
+}
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  z-index: -1;
+  transition: 0.5s;
+}
+.home-sci a :hover ::before {
+  width: 100%;
+}
+
+</style>
+<body>
+    <header class="header">
+        <a href="#" class="logo">AS Brother</a>
+    <nav class="navbar">    
+        <a href="#" class="active">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Books</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+<h1>Hi,I'm Siddhartha Ganguli</h1>
+<h3>Student of BCREC</h3>
+<p>Everything is based on mind, is led by mind, is fashioned by mind. If you speak and act with a polluted mind, suffering will follow you, as the wheels of the oxcart follow the footsteps of the ox.</p>
+<div class="btn-box">
+    <a href="#">Video</a>    
+    <a href="#">Let's talk</a>     
+</div>
+</div>
+<div class="home-sci">
+    <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+    <a href="#"><i class='bx bxl-instagram' ></i></a>
+</div>
+</section>
+
+</body>
+</html>
